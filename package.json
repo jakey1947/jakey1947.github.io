@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@material/web": "^2.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
