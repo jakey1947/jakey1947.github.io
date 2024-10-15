@@ -38,23 +38,31 @@
                 Projects
             </h1>
             <div class="project-grid">
-                <div class="project-card">
+                <button class="project-card">
                     <embed src="https://player.vimeo.com/video/418031482" class="card-embed"></embed>
                     <div class="card-title">Witch Tales</div>
                     <div class="card-description">
                         4 Player tron like party game where you must defeat the other players by blocking them with your trail.<br>
                         I did the majority of the programming as well as look dev for this project.
                     </div>
-                </div>
-                <div class="project-card">
+                </button>
+                <button class="project-card">
                     <iframe src="https://www.youtube-nocookie.com/embed/xCZ49Z0GieQ?si=FYy6-n4-YyyWDKI-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true" class="card-embed"></iframe>
                     <div class="card-title">Stygian Descent</div>
                     <div class="card-description">
                         Single Player Roguelike Platformer with melee focused combat and dozens of items<br>
                         I was the lead programmer on this project and created the frameworks for items, enemy AI and level generation for the game designers to use.
                     </div>
-                </div>
-
+                </button>
+                <button class="project-card">
+                    <div src="assets/Media/LegoMasters.png" class="card-embed" style="background-image:url('assets/Media/LegoMasters.png'); background-size: contain; background-position: center; background-repeat: no-repeat;background-color: #000000;"></div>
+                    <div class="card-title">Lego Masters Prototype</div>
+                    <div class="card-description">
+                        Singleplayer VR Lego Masters game where you race to build structures from provided prompts, made in partnership with Banijay Entertainment as a University Project at QUT.<br>
+                        I was the lead programmer on this project and implemented the mesh generation, input, gameplay loop, game design and all the backend for those systems.
+                        This game is not publicly available because of NDA.
+                    </div>
+                </button>
             </div>
         </div>
     </div>
@@ -163,6 +171,28 @@
             margin: 8px;
             border-radius: 14px;
             box-shadow:10px 10px 10px #000000;
+            border-bottom-color: #4e029b;
+            border-right-color: #4e029b;
+            border-top-color: #988aee;
+            border-left-color: #988aee;
+            border-width: 3px;
+            color: #ffffff;
+            justify-content: start;
+            align-content: start;
+            align-items: start;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:active
+        {
+            background-color: #3d3477;
+            box-shadow:5px 5px 5px #000000;
+            border-bottom-color: #4e029b;
+            border-right-color: #4e029b;
+            border-top-color: #988aee;
+            border-left-color: #988aee;
+            border-width: 3px;
+            translate: 2px 2px;
         }
         .card-embed
         {
