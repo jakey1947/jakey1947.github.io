@@ -133,7 +133,7 @@
                     </div>
                 </div>
             </div>
-            <div id="programming-panel" role="tabpanel" aria-labelledby="programming-tab" style="justify-content: start; text-align: start;">
+            <div id="programming-panel" role="tabpanel" aria-labelledby="programming-tab" style="justify-content: start; text-align: start; visibility: collapse;" hidden>
                 green
             </div>
             <div id="shaders-panel" role="tabpanel" aria-labelledby="shaders-tab" hidden>
@@ -177,6 +177,10 @@
             </md-tabs>
         </div>
         <style>
+            html
+            {
+                overflow-x: hidden;
+            }
             /* *{
                 border: 1px solid #ff0000;
             } */
