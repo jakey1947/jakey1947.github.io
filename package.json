@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@material/web": "^2.2.0"
+    "bootstrap": "^5.3.3"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
