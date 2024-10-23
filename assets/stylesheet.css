@@ -23,16 +23,14 @@ form {
     gap: 16px;
 }
 
-.nav-link
-{
+.nav-link {
     font-family: "Baloo Da 2";
     color: #ffffff;
     background-color: #172d46;
     height: 100%;
 }
 
-.nav-link :hover
-{
+.nav-link :hover {
     font-family: "Baloo Da 2";
     background-color: #172d46;
     color: #000000;
@@ -60,8 +58,7 @@ form {
     width: 100%;
 }
 
-.screenshot-list 
-{
+.screenshot-list {
     align-content: start;
     justify-content: start;
     height: 480px;
@@ -71,8 +68,7 @@ form {
     display: flex;
 }
 
-.screenshot 
-{
+.screenshot {
     display: inline-block;
     max-height: 100%;
     height: 100%;
@@ -115,6 +111,16 @@ form {
     margin: 8px;
     padding: 8px;
     max-height: 90%;
+}
+
+.cavity {
+    background-color: #165181;
+    box-shadow: inset 4px 4px 16px 4px #00000050;
+    border-radius: 18px;
+    padding: 8px;
+    margin-left: 20px;
+    margin-right: 14px;
+    margin-top: 14px;
 }
 
 .project-grid {
