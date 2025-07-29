@@ -1,0 +1,44 @@
+.MainBoard_div1 {
+  max-height: none;
+  align-self: start;
+  border: 1px solid black;
+  flex-shrink: 0;
+  flex-grow: 1;
+  min-height: 100%;
+  height: 100%;
+}
+.MainBoard_div2 {
+  display: block;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  overflow: scroll;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  object-fit: fill;
+  max-height: 100%;
+}
+.MainBoard_img1 {
+  display: inline-block;
+  height: auto;
+  align-content: center;
+  object-fit: fill;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: static;
+}
+.MainBoard_div3 {
+  display: inline;
+  overflow: scroll;
+  position: static;
+  width: 100vw;
+  min-width: 100vw;
+}
+.MainBoard_div4 {
+  overflow: hidden;
+  height: 100vh;
+  object-fit: none;
+  align-content: center;
+  display: inline-block;
+}
