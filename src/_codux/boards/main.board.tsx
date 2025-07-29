@@ -6,17 +6,30 @@ export default createBoard({
   name: "Main",
   Board: () => (
     <div className="MainBoard_div3">
-      <div className="MainBoard_div4"></div>
       <div className="MainBoard_div4">
-        <img
-          src="https://static.wixstatic.com/media/11062b_25e218a68cae48e98a21198d1280a6bd~mv2.jpg/v1/fill/w_600,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_25e218a68cae48e98a21198d1280a6bd~mv2.jpg"
-          alt=""
-          className="MainBoard_img1"
-        />
+        <div className="MainBoard_div5">
+          <div className="MainBoard_div6">
+            <h1 className="MainBoard_header1">Kieran Pavy</h1>
+            <p className="MainBoard_p1">
+              This is a placeholder paragraph. It is here to provide structure
+              while you work on your content. You can replace this text with
+              your own words once you are ready. Placeholders like this are
+              great for visualizing the layout and flow of your document before
+              finalizing the content.
+            </p>
+          </div>
+          <img
+            src="https://cdnb.artstation.com/p/assets/images/images/021/734/127/large/kieran-pavy-smiley-marshmallow.jpg?1572769601"
+            alt=""
+            className="MainBoard_img3"
+          />
+        </div>
       </div>
+      <div className="Scrollpoint" />
     </div>
   ),
   environmentProps: {
-    windowWidth: 1230,
+    windowWidth: 1920,
+    windowHeight: 1080,
   },
 });
