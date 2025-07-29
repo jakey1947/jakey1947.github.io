@@ -30,11 +30,21 @@
 }
 .MainBoard_div3 {
   display: inline;
-  overflow: scroll;
-  position: static;
+  overflow: hidden;
+  position: absolute;
   width: 100vw;
   min-width: 100vw;
   background-color: rgb(0, 0, 0);
+  top: 0px;
+  left: 0px;
+  right: 100%;
+  background-repeat: repeat;
+  background-image: linear-gradient(180deg, #121a2a 0%, #000000 100%);
+  background-position: 0% 0%;
+  background-size: auto auto;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
 }
 .MainBoard_div4 {
   overflow: hidden;
@@ -105,4 +115,19 @@
 .Scrollpoint {
   height: 100vh;
   width: 100vw;
+}
+.MainBoard_div7 {
+  position: fixed;
+  top: 0px;
+  bottom: 100%;
+  right: 100%;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-image: none;
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-color: #ff0000;
 }

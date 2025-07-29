@@ -25,7 +25,7 @@ export default createBoard({
           />
         </div>
       </div>
-      <div className="Scrollpoint" />
+      <div className="Scrollpoint"></div>
     </div>
   ),
   environmentProps: {
