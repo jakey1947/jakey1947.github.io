@@ -18,6 +18,11 @@ export default createBoard({
               great for visualizing the layout and flow of your document before
               finalizing the content.
             </p>
+            <div className="MainBoard_div16">
+              <button className="MainBoard_button3">A</button>
+              <button className="MainBoard_button3">L</button>
+              <button className="MainBoard_button3">M</button>
+            </div>
           </div>
           <img
             src="https://cdnb.artstation.com/p/assets/images/images/021/734/127/large/kieran-pavy-smiley-marshmallow.jpg?1572769601"
@@ -27,43 +32,50 @@ export default createBoard({
         </div>
       </div>
       <div className="Scrollpoint">
-        <div className="MainBoard_div9">
-          <h2 className="MainBoard_header2">Stygian Descent</h2>
-        </div>
-        <div className="MainBoard_div8">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/qX_MJ94vBt0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen="true"
-            class="card-embed"
-            className="MainBoard_iframe1"
-          ></iframe>
-          <div className="MainBoard_div10">
-            <p className="MainBoard_p2">
-              Single Player Roguelike Platformer with melee focused combat and
-              dozens of items 
-            </p>
-            <p className="MainBoard_p2">
-              I was the lead programmer on this project and created the
-              frameworks for items, enemy AI and level generation for the game
-              designers to use.
-            </p>
+        <div className="MainBoard_div18">
+          <div className="MainBoard_div9">
+            <h2 className="MainBoard_header2">Stygian Descent</h2>
           </div>
-        </div>
-        <div className="MainBoard_div11">
-          <div className="MainBoard_div12">
-            <p className="MainBoard_p3">
-              Roguelike - 3D - Side Scroller - Platformer 
-            </p>
-            <p className="MainBoard_p3">Role : Lead Programmer</p>
+          <div className="MainBoard_div8">
+            <div className="MainBoard_div17">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/qX_MJ94vBt0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen="true"
+                class="card-embed"
+                className="MainBoard_iframe1"
+              ></iframe>
+              <div className="MainBoard_div12">
+                <p className="MainBoard_p3">
+                  Roguelike - 3D - Side Scroller - Platformer 
+                </p>
+                <p className="MainBoard_p3">Role : Lead Programmer</p>
+              </div>
+            </div>
+            <div className="MainBoard_div10">
+              <p>
+                Single Player Roguelike Platformer with melee focused combat and
+                dozens of items 
+              </p>
+              <p className="MainBoard_p2">
+                I was the lead programmer on this project and created the
+                frameworks for items, enemy AI and level generation for the game
+                designers to use.  EXAMPLE TEXT EXAMPLE TEXT EXAMPLE
+                TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE
+                TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE
+                TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAM
+              </p>
+            </div>
           </div>
-          <div className="MainBoard_div13">
-            <button className="MainBoard_button2">
-              <img src={BadgeColorSvg} className="MainBoard_img4" />
-            </button>
+          <div className="MainBoard_div11">
+            <div className="MainBoard_div13">
+              <button className="MainBoard_button2">
+                <img src={BadgeColorSvg} className="MainBoard_img4" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -152,7 +164,7 @@ export default createBoard({
     </div>
   ),
   environmentProps: {
-    windowWidth: 1920,
-    windowHeight: 1080,
+    windowWidth: 1752,
+    windowHeight: 915,
   },
 });
