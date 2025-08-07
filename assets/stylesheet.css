@@ -1,12 +1,51 @@
 html {
     overflow-x: hidden;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #000000;
+    z-index: -2;
+}
+
+.itch-button
+{
+    background-color: #00000000;
+    border-width: 0;
+    height: 2em;
+}
+
+.button:hover{
+    cursor: pointer;
+    scale: 1.02;
+}
+
+.scrollpoint {
+    width: 100%;
+    min-height: 100dvh;
+    scroll-snap-align: start start;
+    justify-content: center;
+    align-self: center;
+}
+
+.background-image {
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/039/994/996/large/kieran-pavy-square-smol.jpg?1627544069');
+    z-index: -1;
+    position: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.panel {
+    background-color: #00000094;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 body {
-    font-family: "Baloo Da 2";
+
     color: white;
     display: flex;
-    background-image: linear-gradient(#165181, #4F7CAC);
     min-height: 100vh;
     max-height: fit-content;
     padding: 0;
@@ -14,6 +53,7 @@ body {
     justify-content: start;
     font-size: 18px;
     flex-direction: column;
+    background-color: #00000000;
 }
 
 form {
@@ -24,14 +64,14 @@ form {
 }
 
 .nav-link {
-    font-family: "Baloo Da 2";
+
     color: #ffffff;
     background-color: #172d46;
     height: 100%;
 }
 
 .nav-link :hover {
-    font-family: "Baloo Da 2";
+
     background-color: #172d46;
     color: #000000;
 }
@@ -78,7 +118,7 @@ form {
 }
 
 .nav-bar {
-    font-family: "Baloo Da 2";
+
     color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -105,11 +145,9 @@ form {
     max-width: 700px;
     height: 100%;
     min-height: 40vh;
-    min-width: 350;
-    border-radius: 14px;
-    background-color: #11151Cea;
-    margin: 8px;
-    padding: 8px;
+    min-width: min(350px, 100dvw);
+    margin: 10px;
+    padding: 10px;
     max-height: 90%;
 }
 
@@ -133,23 +171,19 @@ form {
 }
 
 .project-card {
-    background-color: #4F7CAC;
     max-width: 90vw;
     height: 600px;
     padding: 8px;
     margin: 8px;
-    border-radius: 14px;
-    box-shadow: 10px 10px 10px #00000080;
-    border-bottom-color: #4F7CAC;
-    border-right-color: #4F7CAC;
-    border-top-color: #7cabdd;
-    border-left-color: #7cabdd;
-    border-width: 3px;
+    border-width: 0px;
     color: #ffffff;
     justify-content: start;
     display: flex;
     flex-direction: column;
     font-size: 0.75em;
+    background-color: #000c1ad2;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
 }
 
 @media (min-width: 500px) {
@@ -173,8 +207,7 @@ form {
 }
 
 .project-card:hover {
-    translate: -4px -4px;
-    box-shadow: 14px 14px 14px #00000080;
+    scale: 1.01;
 
 }
 
@@ -192,7 +225,7 @@ form {
 
 .card-title {
     padding-top: 5px;
-    font-family: "Baloo Da 2";
+
     color: #ffffff;
     text-align: center;
     font-size: 3em;
@@ -206,7 +239,7 @@ form {
     text-align: start;
 }
 
-.fa {
+.circle-button {
     border: 4px solid #4F7CAC;
     font-size: 3vh;
     line-height: 100%;
@@ -223,6 +256,11 @@ form {
     flex-shrink: 0;
     text-decoration: none;
     color: #ffffff;
+}
+
+.fa{
+    color: white;
+    text-decoration: none;
 }
 
 .fa:hover {

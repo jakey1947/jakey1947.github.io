@@ -1,0 +1,110 @@
+<div w3-include-html="/metadata.html"></div>
+
+<body>    
+    <div class="background-image" style="background-image: url('/assets/Media/lit stone background with guy.jpg'); "></div>
+    <div w3-include-html="/header.html"></div>  
+
+    <div style="width: 100dvw; display: flex; flex-direction: column;">
+
+        <div class="scrollpoint" style="display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; width: 100%; max-width: 83vh; align-self: center;">
+                <div>
+                    <h1>
+                        Stygian Descent
+                    </h1>
+                </div>
+                <div>
+                    <button class="itch-button" style="align-self: center; height: 100%"
+                    onclick="window.open('https://pseudoflow.itch.io/stygian-descent','_blank')">
+                    <img src="/assets/Media/badge-color.svg" class="button" style="height: 4em;">
+                </button>
+            </div>
+
+            </div>
+            <div style="max-height: 50dvh; justify-content: center; display: flex;">
+                <iframe src="https://www.youtube-nocookie.com/embed/qX_MJ94vBt0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
+                                class="card-embed" style="max-height: 50vh; width: min(83vh, 100%);"></iframe>
+            </div>
+            <div class="panel" style="margin: 20px; max-width: 83vh; align-self: center;">
+                <p>
+                    A Sidescrolling Roguelike created in a team of 6 as my capstone project for my Bachelors degree.
+                    I was the lead programmer on the project spearheading the development of gameplay features and tooling for the game designers.
+                    We hit quite a few road bumps throughout the project, we overestimated the speed that our team could work at which brought along some rescoping, as well as some unforseen circumstances which interupted our work for weeks at a time.  Eventually we settled for hand crafting levels rather than full procedural generation, no boss fights and only a few enemies to make sure we could hit the goals for release time.
+                </p>
+            </div>
+
+        </div>
+        <div class="scrollpoint" style="display: flex; flex-direction: column;">
+            <h1 style="justify-content: center; align-self: center;">
+                Procedural Content
+            </h1>
+            <div style="max-height: 50dvh; justify-content: center; display: flex;">
+                <iframe src="https://www.youtube-nocookie.com/embed/Pirs4pQTC3E"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
+                                class="card-embed" style="max-height: 50vh; max-width: 83vh;"></iframe>
+            </div>
+            <div class="panel" style="margin: 20px; max-width: 83vh; align-self: center;">
+                <p>
+                    The levels in Stygian Descent are hand crafted, with procedural geometry generated from a base mesh.  The level designer can create the level by using blenders mesh modelling tools, then the model and asset placement for the platforms will be handled automatically and imported using BEngine Unity by Mifth. 
+                </p>
+                <p>
+                    I'd have loved to make a more complex level generator and we did have fully procedural levels in our maximum scope but we simply didn't have enough time to implement it.
+                </p>
+            </div>
+        </div>
+        <div class="scrollpoint" style="display: flex; flex-direction: column;">
+            <h1 style="justify-content: center; align-self: center;">
+                Items and Inventory
+            </h1>
+            <div style="max-height: 50dvh; justify-content: center; display: flex;">
+                <img src="/assets/Media/Almanac.jpg" style="max-width: 100%;">
+            </div>
+            <div class="panel" style="margin: 20px; max-width: 83vh; align-self: center;">
+                <p>
+                    The items system was built using Scriptable Objects and a Chain of Command structure for the effects.  When an item is added to the inventory, stats would be reset, then each passive item would update them using either a multiplier or custom script. 
+                </p>
+                <p>
+                    Active items on the other hand would be triggered via events such as player hit, heal, attack, jump etc.  When an event is called, the relevant stats such as output damage would be passed through each item one by one for them to make their changes before it's applied to the enemy or player.
+                </p>
+            </div>
+        </div>
+        <div class="scrollpoint" style="display: flex; flex-direction: column;">
+            <h1 style="justify-content: center; align-self: center;">
+                Rarity and Crafting
+            </h1>
+            <div style="max-height: 50dvh; justify-content: center; display: flex;">
+                <img src="/assets/Media/Almanac.jpg" style="max-width: 100%;">
+            </div>
+            <div class="panel" style="margin: 20px; max-width: 83vh; align-self: center;">
+                <p>
+                    Throughout the game, the player can gain items in a Vampire Survivors like draw while in combat, as well as by using crystals at a crafting station for rarer items. 
+                </p>
+                <p>
+                    Each item is placed into a bucket for rarity, when a draw is started, a bucket is selected on an exponential curve, then an item is selected from that bucket at random.  This is done 3 times and the player can pick the item they like.
+                </p>
+            </div>
+        </div>
+        <div class="scrollpoint" style="display: flex; flex-direction: column;">
+            <h1 style="justify-content: center; align-self: center;">
+                Enemy AI
+            </h1>
+            <div style="max-height: 50dvh; justify-content: center; display: flex;">
+                <img src="/assets/Media/Almanac.jpg" style="max-width: 100%;">
+            </div>
+            <div class="panel" style="margin: 20px; max-width: 83vh; align-self: center;">
+                <p>
+                    Enemy AI was handled using State Machines with scriptable objects. this allowed AI to be built by sticking behaviours for roam, persue and attack together without extra code, this didn't turn out to be much of an advantage given the end scope though. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="/footer.html"></div>    
+</body>
+
+<script type="text/javascript" src="/include-html.js"></script>
+<script>includeHTML()</script>
