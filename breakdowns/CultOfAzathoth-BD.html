@@ -1,0 +1,85 @@
+<title>Kieran Pavy's Portfolio</title>
+<meta content="Kieran Pavy's Portfolio" property="og:title" />
+<meta content="Everything you need to know to hire me... hopefully" property="og:description" />
+<meta content="jakey1947.github.io" property="og:url" />
+<meta
+    content="https://cdnb.artstation.com/p/assets/images/images/021/734/127/large/kieran-pavy-smiley-marshmallow.jpg?1572769601"
+    property="og:image" />
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <link rel="stylesheet" href="/assets/stylesheet.css">
+</head>
+
+<body>    
+    <div class="background-image" style="background-image: url('https://img.itch.zone/aW1nLzE3MDA0NjIwLnBuZw==/315x250%23c/DWe1Ol.png'); "></div>
+    <div w3-include-html="/header.html"></div>  
+
+    <div style="width: 100dvw; display: flex; flex-direction: column;">
+
+        <div class="scrollpoint" style="display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; width: 100%; max-width: 83vh; align-self: center;">
+                <div>
+                    <h1>
+                        Cult of Azathoth
+                    </h1>
+                </div>
+                <div>
+                    <button class="itch-button" style="align-self: center; height: 100%"
+                    onclick="window.open('https://jakey1947.itch.io/cult-of-azathoth','_blank')">
+                    <img src="/assets/Media/badge-color.svg" class="button" style="height: 4em;">
+                </button>
+            </div>
+
+            </div>
+            <div style="max-height: 50dvh; justify-content: center; display: flex;">
+                <img src="https://img.itch.zone/aW1nLzE3MDA0NjIwLnBuZw==/315x250%23c/DWe1Ol.png" class="card-embed" 
+                    style="object-fit: contain; background-color: var(--panel-color); backdrop-filter: blur(10px); max-width: 83vh;">
+            </div>
+            <div class="panel" style="margin: 20px; max-width: 83vh; align-self: center;">
+                <p>
+                    Cult of Azathoth is a roguelike resource management game where the player fights to keep Azathoth asleep by running businesses to fund
+                    their various sacrifices.  It was made over the course of a few days as part of the QUT Winter Gamejam 2024 along with a team of 3 freshmen.
+                </p>
+                <p>
+                    The original scope was to have a few structures for each resource, people, money and sacrifices. and an upgrade system so you could get further each time you play.  
+                    We didn't end up implementing an upgrade system due to time constraints though so this is a true roguelike rather than a roguelite like we intended.
+                </p>
+                <p>
+                    During this project I took the role of team lead and programmer.  throughout the project I was teaching a group of freshmen the basics of how to use Unity
+                    and how to structure a project for long term development, even though it was a short term project.
+                </p>
+            </div>
+
+        </div>
+        <div class="scrollpoint" style="display: flex; flex-direction: column;">
+            <h1 style="justify-content: center; align-self: center;">
+                Events System
+            </h1>
+            <div style="max-height: 50dvh; justify-content: center; display: flex;">
+                <img src="/assets/Media/Azathoth_Tutorial.jpg"
+                                class="card-embed" style="max-height: 50vh; max-width: 83vh;"></img>
+            </div>
+            <div class="panel" style="margin: 20px; max-width: 83vh; align-self: center;">
+                <p>
+                    Events are stored as scriptable objects, variables such as Azathoths consciousness and money are stored in scriptable objects as well allowing them to be
+                    drag and dropped into the conditions without writing any code. 
+                </p>
+                <p>
+                    I took inspiration from how I solved the inventory system for Stygian Descent and I'm quite happy with how it turned out, 
+                    we were able to implement multiple events quite quickly, including the initial prompt which allows you to lose the game instantly.
+                </p>
+                <p>
+                    why does that 'n' look like a 'h' though?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="/footer.html"></div>    
+</body>
+
+<script type="text/javascript" src="/include-html.js"></script>
+<script>includeHTML()</script>
