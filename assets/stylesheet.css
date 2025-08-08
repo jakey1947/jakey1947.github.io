@@ -206,6 +206,10 @@ form {
     backdrop-filter: blur(10px);
 }
 
+.project-card:link{
+    color: white;
+}
+
 .project-card:visited{
     color: white;
 }
