@@ -183,6 +183,7 @@ form {
 }
 
 .project-card {
+    text-decoration: none;
     max-width: 90vw;
     height: 600px;
     padding: 8px;
