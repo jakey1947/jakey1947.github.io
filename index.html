@@ -15,195 +15,191 @@
     <link rel="stylesheet" href="/assets/stylesheet.css">
 </head>
 
-<body style="scroll-behavior: smooth;">
+<body style="scroll-behavior: smooth; scroll-snap-type: y mandatory; overflow-y: auto; height: 100dvh;">
     <div class="background-image"></div>
     <div w3-include-html="/header.html"></div>  
 
-    <div style="display: flex; margin-top: 0; margin-bottom: auto; justify-content: center; max-height: fit-content; max-width: 100vw;">
-        <div style="display: inline-block; justify-self: center; padding: auto; max-width: 100vw; max-height: fit-content;">
-            <div id="overview-panel" role="tabpanel" aria-labelledby="overview-tab" style="display: flex; align-content: center; flex-direction: column; ">
-                <div class="setter"
-                    style="display:flex; justify-content: center; min-height: 700px; height:100dvh; aspect-ratio: 1.777777777777777777777777778; background-image: url('https://cdnb.artstation.com/p/assets/images/images/054/219/289/large/kieran-pavy-final-raised-1080.jpg?1664029054'); background-size:cover;">
-                    <div class="bio-container">
-                        <div class="info-box panel">
-                            <h1 style="text-align: center;">About me</h1>
-                            <div style="display: flex; flex-direction: column; flex-shrink: 0; flex-grow: 1;">
-                                I'm a game developer from brisbane skilled in all things programming and 3D art. I've
-                                always been a gamer since I was little, growing up I sunk hours upon hours into the PS2 playing Ratchet and Clank, the Jak series and eventually switch to PC playing games like Titan Quest and whatever flash game I could get my hands on.
-                                <p>
-                                    I'm primarily a programmer but I also do a lot of 3D art.  My primary languages are C# and Rust and for 3D I use blender and geometry nodes.
-                                </p>
-                                <div
-                                    style="display: flex; justify-content: space-around; width:100%; height: 30%; justify-self: end; margin-top: auto; padding: 5px;">
-                                    <a class="fa fa-envelope circle-button" href="mailto:kieran.pavy@proton.me"></a>
-                                    <a class="fa-linkedin fa circle-button"
-                                        href="https://www.linkedin.com/in/kieran-pavy-38641a14a/"></a>
-                                    <a class="circle-button"
-                                        style="background-image: url('assets/Media/ArtStation-logomark-white.svg');"
-                                        href="https://www.artstation.com/jakey1947"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <embed
-                            src="https://cdnb.artstation.com/p/assets/images/images/021/734/127/large/kieran-pavy-smiley-marshmallow.jpg?1572769601"
-                            style="border-radius: 100%; aspect-ratio: 1; max-width: 40%; max-height:30vh; height: auto; padding: 8px; background-color: #11151C;"></embed>
-                    </div>
-                </div>
-                <div>
-                    <h1 style="text-align: center;">
-                        Games
-                    </h1>
-                    <div class="project-grid">
-                        <a class="project-card"
-                            href='/breakdowns/SD-Breakdown.html' style="text-decoration: none;">
-                            <iframe src="https://www.youtube-nocookie.com/embed/qX_MJ94vBt0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
-                                class="card-embed"></iframe>
-                            <div class="card-title">Stygian Descent</div>
-                            <div class="card-description">
-                                Single Player Roguelike Platformer with melee focused combat and dozens of items<br>
-                                I was the lead programmer on this project and created the frameworks for items, enemy AI
-                                and level generation for the game designers to use.
-                            </div>
-                        </a>
-                        <a class="project-card" href="/breakdowns/CultOfAzathoth-BD.html">
-                            <div class="card-embed"
-                                    style="background-image:url('https://img.itch.zone/aW1nLzE3MDA0NjIwLnBuZw==/315x250%23c/DWe1Ol.png'); background-size: contain; background-position: center; background-repeat: no-repeat;background-color: #000000;">
-                                </div>
-                            <div class="card-title">Cult of Azathoth</div>
-                            <div class="card-description">
-                                Single Player Roguelike Idle game where you run a cult and must balance resources to capture and sacrifice in the name of keeping Azathoth alseep.<br>
-                                Created over the course of a week between assignments with a small team of freshmen at QUT for the QUT Winter Game Jam.
-                            </div>
-                        </a>
-                        <a class="project-card">
-                            <div class="card-embed"
-                                style="background-image:url('assets/Media/LegoMasters.png'); background-size: contain; background-position: center; background-repeat: no-repeat;background-color: #000000;">
-                            </div>
-                            <div class="card-title">Lego Masters Prototype</div>
-                            <div class="card-description">
-                                Singleplayer VR Lego Masters game where you race to build structures from provided
-                                prompts, made in partnership with Banijay Entertainment as a University Project at QUT.
-                                <p>
-                                    I was the lead programmer on this project and implemented the mesh generation,
-                                    input, gameplay loop, game design and all the backend for those systems.
-                                    This game is not publicly available because of NDA.
-                                </p>
-                            </div>
-                        </a>
-                        <a class="project-card">
-                            <iframe src="https://www.youtube-nocookie.com/embed/3a-FRQagCHg"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
-                                class="card-embed"></iframe>
-                            <div class="card-title">Firebending VR Prototype</div>
-                            <div class="card-description">
-                                A prototype for a 2 player online arena fighting game where the player can use powers similar to that of Avatar's fire and lightning bending.
-                                Created over the course of 2 weeks this project's purpose was both an assignment, and to learn the ins and outs of VR game development.
-                            </div>
-                        </a>
-                        <a class="project-card" href="/breakdowns/WitchTales-BD.html">
-                            <embed src="https://player.vimeo.com/video/418031482" class="card-embed"></embed>
-                            <div class="card-title">Witch Tales</div>
-                            <div class="card-description">
-                                4 Player tron like party game where you must defeat the other players by blocking them
-                                with your trail.<br>
-                                I did the majority of the programming as well as look dev for this project.
-                            </div>
-                        </a>
-                        <button class="project-card" onclick="window.open('https://www.youtube.com/watch?v=/N1-ocOLYc6w','_blank')">
-                            <div class="card-embed"
-                                style="background-image:url('assets/Media/BnB\ Screenshot.png'); background-size: contain; background-position: center; background-repeat: no-repeat;background-color: #000000;">
-                            </div>
-                            <div class="card-title">BnB Arcade Clone</div>
-                            <div class="card-description">
-                                A clone of BnB Arcade I created during my first year of my diploma for an assignment.  
-                                I was responsible for a large portion of the programming, art and music.
-                                This is currently not available to play due to copyright.
-                            </button>
-                    </div>
-                </div>
-                <div>
-                    <h1 style="text-align: center;">
-                        Art
-                    </h1>
-                    <div class="project-grid">
-                        <a href="https://www.artstation.com/artwork/BXx9Lk" class="project-card">
-                            <h2 style="text-align: center;">Wisteria Generator</h2>
-                            <img src="https://cdnb.artstation.com/p/assets/images/images/078/015/941/large/marshmallow-fellow-path-8-nodof.jpg?1720973566" alt=""
-                            style="border-radius: 5px;">
-                        </a>
-                        <a href="https://www.artstation.com/artwork/XgNOVL" class="project-card" style="width: 100%;">
-                            <h2 style="text-align: center;">Sunken Library</h2>
-                            <div style="overflow: hidden; display: flex; 
-                                background-image: url('https://cdnb.artstation.com/p/assets/images/images/064/790/185/large/marshmallow-fellow-test-render-14.jpg?1688743353');
-                                background-size: cover;
-                                background-position: center;
-                                width: 100%;
-                                height: 100%;
-                                flex-grow: 1;
-                                border-radius: 5px;
-                            ">
-                            </div>
-                        </a>
-                        <a href="https://www.artstation.com/artwork/29K6AB" class="project-card">
-                            <h2 style="text-align: center;">Kappa</h2>
-                            <div style="overflow: hidden; display: flex; 
-                                background-image: url('https://cdnb.artstation.com/p/assets/images/images/066/646/759/large/marshmallow-fellow-final-1440p.jpg?1693412865');
-                                background-size: cover;
-                                background-position: center;
-                                width: 100%;
-                                height: 100%;
-                                flex-grow: 1;
-                                border-radius: 5px;
-                            ">
-                            </div>
-                        </a>
-                        <a href="https://www.artstation.com/artwork/3qgam2" class="project-card">
-                            <h2 style="text-align: center;">Lego Tsunami</h2>
-                            <div style="overflow: hidden; display: flex; 
-                                background-image: url('https://cdnb.artstation.com/p/assets/images/images/054/226/257/large/kieran-pavy-final-closeup-1080.jpg?1664044056');
-                                background-size: cover;
-                                background-position: center;
-                                width: 100%;
-                                height: 100%;
-                                flex-grow: 1;
-                                border-radius: 5px;
-                            ">
-                            </div>
-                        </a>
-                        <a href="https://www.artstation.com/artwork/xY3qrE" class="project-card">
-                            <h2 style="text-align: center;">Procedural Christmas Tree</h2>
-                            <div style="overflow: hidden; display: flex; 
-                                background-image: url('https://cdna.artstation.com/p/assets/images/images/044/664/456/large/kieran-pavy-final-hq.jpg?1640775357');
-                                background-size: cover;
-                                background-position: center;
-                                width: 100%;
-                                height: 100%;
-                                flex-grow: 1;
-                                border-radius: 5px;
-                            ">
-                            </div>
-                        </a>
-                        <a href="https://www.artstation.com/artwork/rRwGV6" class="project-card">
-                            <h2 style="text-align: center;">Marshmallow Shader</h2>
-                            <div style="overflow: hidden; display: flex; 
-                                background-image: url('https://cdnb.artstation.com/p/assets/images/images/021/734/339/large/kieran-pavy-strong-marshmallow-3.jpg?1572770096');
-                                background-size: cover;
-                                background-position: center;
-                                width: 100%;
-                                height: 100%;
-                                flex-grow: 1;
-                                border-radius: 5px;
-                            ">
-                            </div>
-                        </a>
+    <div class="scrollpoint"
+        style="display:flex; 
+            justify-content: center; 
+            scroll-snap-align: top; background-image: url('https://cdnb.artstation.com/p/assets/images/images/054/219/289/large/kieran-pavy-final-raised-1080.jpg?1664029054'); background-size:cover;">
+        <div class="bio-container">
+            <div class="info-box panel">
+                <h1 style="text-align: center;">About me</h1>
+                <div style="display: flex; flex-direction: column; flex-shrink: 0; flex-grow: 1;">
+                    I'm a game developer from brisbane skilled in all things programming and 3D art. I've
+                    always been a gamer since I was little, growing up I sunk hours upon hours into the PS2 playing Ratchet and Clank, the Jak series and eventually switch to PC playing games like Titan Quest and whatever flash game I could get my hands on.
+                    <p>
+                        I'm primarily a programmer but I also do a lot of 3D art.  My primary languages are C# and Rust and for 3D I use blender and geometry nodes.
+                    </p>
+                    <div
+                        style="display: flex; justify-content: space-around; width:100%; height: 30%; justify-self: end; margin-top: auto; padding: 5px;">
+                        <a class="fa fa-envelope circle-button" href="mailto:kieran.pavy@proton.me"></a>
+                        <a class="fa-linkedin fa circle-button"
+                            href="https://www.linkedin.com/in/kieran-pavy-38641a14a/"></a>
+                        <a class="circle-button"
+                            style="background-image: url('assets/Media/ArtStation-logomark-white.svg');"
+                            href="https://www.artstation.com/jakey1947"></a>
                     </div>
                 </div>
             </div>
+            <embed
+                src="https://cdnb.artstation.com/p/assets/images/images/021/734/127/large/kieran-pavy-smiley-marshmallow.jpg?1572769601"
+                style="border-radius: 100%; aspect-ratio: 1; max-width: 40%; max-height:30vh; height: auto; padding: 8px; background-color: #11151C;"></embed>
+        </div>
+    </div>
+    <div class="scrollpoint" style="display: flex; flex-direction: column; scroll-snap-align: center;">
+        <h1 class="section-title">
+            Games
+        </h1>
+        <div class="project-grid">
+            <a class="project-card"
+                href='/breakdowns/SD-Breakdown.html' style="text-decoration: none;">
+                <iframe src="https://www.youtube-nocookie.com/embed/qX_MJ94vBt0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
+                    class="card-embed"></iframe>
+                <div class="card-title">Stygian Descent</div>
+                <p class="card-description">
+                    Single Player Roguelike Platformer with melee focused combat and dozens of items<br>
+                    I was the lead programmer on this project and created the frameworks for items, enemy AI
+                    and level generation for the game designers to use.
+                </p>
+            </a>
+            <a class="project-card" href="/breakdowns/CultOfAzathoth-BD.html">
+                <div class="card-embed"
+                        style="background-image:url('https://img.itch.zone/aW1nLzE3MDA0NjIwLnBuZw==/315x250%23c/DWe1Ol.png'); background-size: contain; background-position: center; background-repeat: no-repeat;background-color: #000000;">
+                    </div>
+                <div class="card-title">Cult of Azathoth</div>
+                <p class="card-description">
+                    Single Player Roguelike Idle game where you run a cult and must balance resources to capture and sacrifice in the name of keeping Azathoth alseep.<br>
+                    Created over the course of a week between assignments with a small team of freshmen at QUT for the QUT Winter Game Jam.
+                </p>
+            </a>
+            <a class="project-card">
+                <div class="card-embed"
+                    style="background-image:url('assets/Media/LegoMasters.png'); background-size: contain; background-position: center; background-repeat: no-repeat;background-color: #000000;">
+                </div>
+                <div class="card-title">Lego Masters Prototype</div>
+                <p class="card-description">
+                    Singleplayer VR Lego Masters game where you race to build structures from provided
+                    prompts, made in partnership with Banijay Entertainment as a University Project at QUT.
+                    <br>
+                    I was the lead programmer on this project and implemented the mesh generation,
+                    input, gameplay loop, game design and all the backend for those systems.
+                    This game is not publicly available because of NDA.
+                </p>
+            </a>
+            <a class="project-card">
+                <iframe src="https://www.youtube-nocookie.com/embed/3a-FRQagCHg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
+                    class="card-embed"></iframe>
+                <div class="card-title">Firebending VR Prototype</div>
+                <p class="card-description">
+                    A prototype for a 2 player online arena fighting game where the player can use powers similar to that of Avatar's fire and lightning bending.
+                    Created over the course of 2 weeks this project's purpose was both an assignment, and to learn the ins and outs of VR game development.
+                </p>
+            </a>
+            <a class="project-card" href="/breakdowns/WitchTales-BD.html">
+                <embed src="https://player.vimeo.com/video/418031482" class="card-embed"></embed>
+                <div class="card-title">Witch Tales</div>
+                <p class="card-description">
+                    4 Player tron like party game where you must defeat the other players by blocking them
+                    with your trail.<br>
+                    I did the majority of the programming as well as look dev for this project.
+                </p>
+            </a>
+            <a class="project-card">
+                <div class="card-embed"
+                    style="background-image:url('assets/Media/BnB\ Screenshot.png'); background-size: contain; background-position: center; background-repeat: no-repeat;background-color: #000000;">
+                </div>
+                <div class="card-title">BnB Arcade Clone</div>
+                <p class="card-description">
+                    A clone of BnB Arcade I created during my first year of my diploma for an assignment.  
+                    I was responsible for a large portion of the programming, art and music.
+                    This is currently not available to play due to copyright.
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="scrollpoint" style="display: flex; flex-direction: column; scroll-snap-align: center;">
+        <h1 class="section-title">
+            Art
+        </h1>
+        <div class="project-grid">
+            <a href="https://www.artstation.com/artwork/BXx9Lk" class="project-card">
+                <h2 style="text-align: center;">Wisteria Generator</h2>
+                <img src="https://cdnb.artstation.com/p/assets/images/images/078/015/941/large/marshmallow-fellow-path-8-nodof.jpg?1720973566" alt=""
+                style="border-radius: 5px;">
+            </a>
+            <a href="https://www.artstation.com/artwork/XgNOVL" class="project-card" style="width: 100%;">
+                <h2 style="text-align: center;">Sunken Library</h2>
+                <div style="overflow: hidden; display: flex; 
+                    background-image: url('https://cdnb.artstation.com/p/assets/images/images/064/790/185/large/marshmallow-fellow-test-render-14.jpg?1688743353');
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    flex-grow: 1;
+                    border-radius: 5px;
+                ">
+                </div>
+            </a>
+            <a href="https://www.artstation.com/artwork/29K6AB" class="project-card">
+                <h2 style="text-align: center;">Kappa</h2>
+                <div style="overflow: hidden; display: flex; 
+                    background-image: url('https://cdnb.artstation.com/p/assets/images/images/066/646/759/large/marshmallow-fellow-final-1440p.jpg?1693412865');
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    flex-grow: 1;
+                    border-radius: 5px;
+                ">
+                </div>
+            </a>
+            <a href="https://www.artstation.com/artwork/3qgam2" class="project-card">
+                <h2 style="text-align: center;">Lego Tsunami</h2>
+                <div style="overflow: hidden; display: flex; 
+                    background-image: url('https://cdnb.artstation.com/p/assets/images/images/054/226/257/large/kieran-pavy-final-closeup-1080.jpg?1664044056');
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    flex-grow: 1;
+                    border-radius: 5px;
+                ">
+                </div>
+            </a>
+            <a href="https://www.artstation.com/artwork/xY3qrE" class="project-card">
+                <h2 style="text-align: center;">Procedural Christmas Tree</h2>
+                <div style="overflow: hidden; display: flex; 
+                    background-image: url('https://cdna.artstation.com/p/assets/images/images/044/664/456/large/kieran-pavy-final-hq.jpg?1640775357');
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    flex-grow: 1;
+                    border-radius: 5px;
+                ">
+                </div>
+            </a>
+            <a href="https://www.artstation.com/artwork/rRwGV6" class="project-card">
+                <h2 style="text-align: center;">Marshmallow Shader</h2>
+                <div style="overflow: hidden; display: flex; 
+                    background-image: url('https://cdnb.artstation.com/p/assets/images/images/021/734/339/large/kieran-pavy-strong-marshmallow-3.jpg?1572770096');
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    flex-grow: 1;
+                    border-radius: 5px;
+                ">
+                </div>
+            </a>
         </div>
     </div>
     <div w3-include-html="/footer.html"></div>
