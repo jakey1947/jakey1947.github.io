@@ -5,6 +5,10 @@
 
 }
 
+body{
+    scroll-behavior: smooth; scroll-snap-type: y mandatory; overflow-y: auto; height: 100dvh;
+}
+
 html {
     overflow-x: hidden;
     font-family:'Courier New', Courier, monospace;
