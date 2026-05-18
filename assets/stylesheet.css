@@ -65,9 +65,17 @@ a:visited{
     height: 2em;
 }
 
+
+
 .button:hover{
     cursor: pointer;
     scale: 1.02;
+}
+
+.content-container {
+    width: 100dvw; 
+    display: flex; 
+    flex-direction: column;
 }
 
 .scrollpoint {
