@@ -1,14 +1,20 @@
-<div class="panel"
- style="
-    box-sizing: border-box;
-    border-radius: 0;
-    height: 60px; 
-    width: 100dvw;
-    justify-content: space-between; 
-    align-content: center;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    ">
+<style scoped>
+
+    .navbar {
+        box-sizing: border-box;
+        border-radius: 0;
+        height: 60px; 
+        width: 100dvw;
+        justify-content: space-between; 
+        align-content: center;
+        z-index: 1;
+        top: 0;
+        position: absolute;
+        @media screen and (max-height: 720px) {
+            position: static;
+        };
+    }
+</style>
+<div class="panel navbar">
     <a href="/index.html" style="height: 100%; font-size: 30px; align-content: center; color: white; text-decoration: none;"><b>Kieran Pavy</b></a>
 </div>
