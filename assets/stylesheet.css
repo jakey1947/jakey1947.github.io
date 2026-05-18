@@ -100,6 +100,12 @@ a:visited{
     min-width: min(100vw, 480);
 }
 
+.description-panel {
+    margin: 20px; 
+    max-width: max(83vh,min(100dvw,480px));
+    align-self: center;
+}
+
 .art-panel-image{
     overflow: hidden; 
     background-size: cover;
