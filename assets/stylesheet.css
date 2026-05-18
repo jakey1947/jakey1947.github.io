@@ -72,11 +72,10 @@ a:visited{
 
 .scrollpoint {
     width: 100%;
-    min-height: 100dvh;
+    min-height: 100dvh - 30px;
     scroll-snap-align: end;
     justify-content: center;
     align-self: center;
-    max-height: 100vh;
 }
 
 .background-image {
@@ -87,6 +86,7 @@ a:visited{
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
+    filter: blur(4px);
 }
 
 .panel {
@@ -97,6 +97,7 @@ a:visited{
     padding-right: 20px;
     padding-left: 20px;
     box-sizing: border-box;
+    min-width: min(100vw, 480);
 }
 
 .art-panel-image{
@@ -202,7 +203,7 @@ form {
     overflow-x: auto;
     overflow-y: hidden;
     flex-direction: column;
-    max-height: 100%;
+    max-height: 100vh;
     min-width: 80vw;
     height: min-content;
     box-sizing: border-box;
